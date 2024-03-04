@@ -2,13 +2,13 @@
 :root {
     --main-font: 'Inter-Variable', sans-serif;
     --accent-font: 'Press Star 2P';
-    --themes-main-color: #000; - /*--accent-color*/
-    --themes-background: #fff; - /*--background-color*/
+    --themes-main-color: #000;  /*--accent-color*/
+    --themes-background: #fff;  /*--background-color*/
     --gradient-color: #e7e7e7, #1a1a1a; /*background-image*/
     --mix-blend-color: var(--themes-background);
     --bg-color: #d3d3d3; /*background-image-lines*/
-    --font-second-weight: 700; - /*--title-font-weight*/
-    --font-main-weight: 400; - /*--text-font-weight*/
+    --font-second-weight: 700;  /*--title-font-weight*/
+    --font-main-weight: 400;  /*--text-font-weight*/
     --content-width: clamp(375px, 48.7%, 700px);
     --heart-fill-color: #FF0000;
   }

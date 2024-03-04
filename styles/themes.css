@@ -17,13 +17,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-main-weight: 465;
-    --font-second-weight: 785;
-    --themes-background: #000;
-    --themes-main-color: #00cc14;
-    --bg-color: #000;
-    --gradient-color: #007f0c, #004306;
-    --mix-blend-color: var(--themes-main-color);
+      --font-main-weight: 465;
+      --font-second-weight: 785;
+      --themes-background: #000;
+      --themes-main-color: #00cc14;
+      --bg-color: #000;
+      --gradient-color: #007f0c, #004306;
+      --mix-blend-color: var(--themes-main-color);
   }
 }
 
@@ -36,7 +36,3 @@
   --gradient-color: #e7e7e7, #1a1a1a;
   --mix-blend-color: var(--themes-background);
 }
-
- 
-
-  
