@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: 'Press Star 2P';
-    src: url('./PressStart2P-Regular.woff') format('woff');
+    src: url('PressStart2P-Regular.woff') format('woff');
     font-display: swap;
-    font-weight: normal;   
+    font-size: 400;  
 }
 
 
