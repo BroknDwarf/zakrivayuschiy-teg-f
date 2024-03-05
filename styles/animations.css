@@ -42,15 +42,9 @@
   }
 }
 
+
 @media ((hover: hover) and (pointer:fine)) {
-  .button:hover::before {
-      transform: scale(1, 1);
-  }
-
-  .theme-menu__button:hover {
-      opacity: 0.6;
-  }
-
+ 
   .like-icon:hover .core {
       fill: var(--themes-main-color);
       transition: fill 0.3s linear;
@@ -95,23 +89,21 @@
   }
 }
 
-@media (width <= 375px) {
-  .save-button {
-      grid-template-columns: auto;
-      justify-items: center;
+.like-icon {
+    display: block;
+    transition: fill 0.1s linear;
   }
-
-  .floppy-image {
-      width: 28px;
+  
+  .sparks {
+    opacity: 0;
   }
-
-  .dialog[open] {
-      width: 341px;
-      height: 195px;
-      padding-inline: 38px;
+  
+  .core {
+    fill: transparent;
+    transition: fill 0.3s 0.03s linear;
   }
-
-  .close {
-      width: 257px;
-  }
-}
+  
+  .main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
+  } 

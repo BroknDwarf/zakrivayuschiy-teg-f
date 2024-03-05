@@ -24,6 +24,7 @@
   font-family: var(--main-font);
   color: var(--themes-main-color);
   font-variation-settings: "wght" var(--font-main-weight);
+  background-position: center;
 }
 
 .button {
@@ -73,18 +74,19 @@
   font-family: var(--accent-font);
   text-transform: uppercase;
   max-width: 700px;
+  max-height: 364px;
 }
 
 .header-main-text {
   font-size: clamp(49px, 4.0625rem, 6vw);
   text-decoration: none;
   line-height: 1;
-  font-weight: 400;
-  margin-block-end: -10px;
+  font-weight: 400; 
 }
 
 .header-main-subtitle {
   font-size: clamp(14px, 1.4375rem, 2.1vw);
+  margin-block-start: ; 
 }
 
 .theme-menu__list {
@@ -133,6 +135,8 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
+  top: auto;
+  left: auto;
   animation: movement-arrows 0.5s ease-in-out infinite alternate;
 }
 
@@ -172,8 +176,8 @@
 .card-mage-label {
   position: absolute;
   justify-self: end;
-  margin-block-start: max(23px, 1.736%);
-  margin-inline-end: max(11px, 1.736%);
+  margin-block-start: 23px;
+  margin-inline-end: 11px;
   color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: 0.875rem;
@@ -213,7 +217,7 @@
   padding: 0;
   background-color: transparent;
   border: 2px solid transparent;
-  transition: var(--themes-main-color) 0.3s ease;
+  transition: border-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -223,25 +227,6 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--themes-main-color);
-}
-
-.like-icon {
-  display: block;
-  transition: fill 0.1s linear;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.core {
-  fill: transparent;
-  transition: fill 0.3s 0.03s linear;
-}
-
-.main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
 }
 
 .card__like-button {
@@ -274,7 +259,7 @@
 
 .dialog[open] {
   width: 357px;
-  height: 193px;
+  height: auto;
   padding: 30px;
   border: 2px solid var(--themes-main-color);
   background-color: var(--themes-background);
@@ -347,3 +332,32 @@ dialog::backdrop {
 .filter-mixed {
   filter: brightness(0.8) saturate(150%) hue-rotate(10deg);
 }
+
+@media (width <= 375px) {
+  .save-button {
+      grid-template-columns: auto;
+      justify-items: center;
+  }
+
+  .floppy-image {
+      width: 28px;
+  }
+
+  .dialog[open] {
+      width: 341px;
+      height: 195px;
+      padding-inline: 38px;
+  }
+
+  .close {
+      width: 257px;
+  }
+}
+
+.button:hover::before {
+  transform: scale(1, 1);
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+} 

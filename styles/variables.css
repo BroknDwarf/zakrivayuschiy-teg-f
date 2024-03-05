@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font: 'Inter-Variable', sans-serif;
-    --accent-font: 'Press Star 2P';
+    --main-font: 'Inter-Variable', Arial, sans-serif;
+    --accent-font: 'Press Star 2P', Arial, sans-serif;
     --themes-main-color: #000;  
     --themes-background: #fff;  
     --gradient-color: #e7e7e7, #1a1a1a; 
