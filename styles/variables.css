@@ -1,14 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font: 'Inter-Variable', Arial, sans-serif;
-    --accent-font: 'Press Star 2P', Arial, sans-serif;
-    --themes-main-color: #000;  
-    --themes-background: #fff;  
-    --gradient-color: #e7e7e7, #1a1a1a; 
-    --mix-blend-color: var(--themes-background);
-    --bg-color: #d3d3d3; 
-    --font-second-weight: 700;  
-    --font-main-weight: 400;  
-    --content-width: clamp(375px, 48.7%, 700px);
-    --heart-fill-color: #FF0000;
-  }
+  --main-font: 'Inter-Variable', Arial, sans-serif;
+  --accent-font: 'Press Start 2P', Arial, sans-serif;
+  --font-main-weight: 400;
+  --font-second-weight: 700;
+  --themes-background: #fff;
+  --themes-main-color: #000;
+  --bg-color: #d3d3d3;
+  --gradient-color: #e7e7e7, #1a1a1a;
+  --content-width: clamp(375px, 48.7%, 700px);
+  --mix-blend-color: var(--background-color);
+  --heart-fill-color: #FF0000;
+  --border: 2px solid var(--themes-main-color);
+}
