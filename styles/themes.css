@@ -12,7 +12,7 @@
   --themes-main-color: #000;
   --bg-color: #d3d3d3;
   --gradient-color: #e7e7e7, #1a1a1a;
-  --mix-blend-color: var(--themes-background);
+  --mix-blend-color: var(--themes-main-color);
 }
 
 :root.theme-dark {

@@ -19,19 +19,23 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-color: var(--themes-background);
-  background-image: repeating-linear-gradient(to right, var(--bg-color) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--bg-color) 0 2px, transparent 2px 4px),
-      repeating-linear-gradient(to bottom, var(--gradient-color));
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--bg-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--bg-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, var(--gradient-color));
   background-size: cover;
   font-family: var(--main-font);
   color: var(--themes-main-color);
   font-variation-settings: "wght" var(--font-main-weight);
   background-attachment: fixed;
-  top: 0;
-  left: 0;
-}
-
-.page::-webkit-scrollbar {
-  display: none;
+  /* margin: 0 auto; */
 }
 
 .button {
@@ -156,10 +160,10 @@
 }
 
 .main {
-  margin: auto;
-  width: var(--content-width);
   display: grid;
   gap: 50px;
+  width: var(--content-width);
+  margin:  auto;
 }
 
 .main-cards {
@@ -189,23 +193,29 @@
 .card-mage-label {
   position: absolute;
   justify-self: end;
+  top: auto;
+  right: auto;
   margin-block-start: 23px;
-  margin-inline-end: 11px;
+  margin-inline-end: 11px; 
   color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: 0.875rem;
   font-weight: var(--font-second-weight);
-  text-shadow: -1px 0 var(--themes-background), 0 1px var(--themes-background), 1px 0 var(--themes-background), 0 -1px var(--themes-background);
+  text-shadow: -1px 0 var(--themes-background), 0 1px var(--themes-background),
+    1px 0 var(--themes-background), 0 -1px var(--themes-background);
   opacity: 0.5;
   mix-blend-mode: hard-light;
   z-index: 1;
 }
 
-@supports ((text-stroke: 1px var(--themes-background)) or (-webkit-text-stroke: 1px var(--themes-background))) {
+@supports (
+  (text-stroke: 1px var(--themes-background)) or
+    (-webkit-text-stroke: 1px var(--themes-background))
+) {
   .card-mage-label {
-      -webkit-text-stroke: 1px var(--themes-background);
-      text-stroke: 1px var(--themes-background);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--themes-background);
+    text-stroke: 1px var(--themes-background);
+    text-shadow: none;
   }
 }
 
@@ -254,7 +264,7 @@
 
 .button__text {
   color: var(--mix-blend-color);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference;  */
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
@@ -272,7 +282,7 @@
 .floppy-image {
   width: 21px;
   color: var(--mix-blend-color);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .dialog[open] {
@@ -304,6 +314,7 @@ dialog::backdrop {
   font-family: var(--accent-font);
   font-size: 0.875rem;
   line-height: 150%;
+  text-transform: uppercase;
 }
 
 .form {
@@ -317,74 +328,33 @@ dialog::backdrop {
 
 @media ((hover: hover) and (pointer:fine)) {
   .button:hover::before {
-      transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 
   .theme-menu__button:hover {
-      opacity: 0.6;
-  }
-
-  .like-icon:hover .core {
-      fill: var(--themes-main-color);
-      transition: fill 0.3s linear;
-  }
-
-  .like-icon:hover .main-body {
-      fill: var(--themes-main-color);
-      transition: fill 0.3s 0.05s linear;
-  }
-
-  .like-icon:active .core {
-      fill: var(--heart-fill-color);
-      transition: fill 0.3s linear;
-  }
-
-  .like-icon:active .main-body {
-      fill: var(--heart-fill-color);
-      transition: fill 0.3s 0.05s linear;
-  }
-
-  .like-icon.is-liked .core {
-      fill: var(--heart-fill-color);
-      transition: fill 0.3s linear;
-  }
-
-  .like-icon.is-liked .main-body {
-      fill: var(--heart-fill-color);
-      transition: fill 0.3s 0.05s linear;
-  }
-
-  .like-icon.is-liked .contour {
-      fill: var(--heart-fill-color);
-      transition: fill 0.3s 0.06s linear;
-  }
-
-  .like-icon.is-liked .heart {
-      animation: heart-scale 0.3s 0.1s ease-in alternate;
-  }
-
-  .like-icon.is-liked .sparks {
-      animation: sparks 0.3s 0.3s ease-in alternate;
+    opacity: 0.6;
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 375px) { 
+
   .save-button {
-      grid-template-columns: auto;
-      justify-items: center;
+    grid-template-columns: auto;
+    justify-items: center;
   }
 
-  .save-icon {
-      width: 28px;
+  .floppy-image {
+    width: 28px;
   }
 
   .dialog[open] {
-      width: 341px;
-      padding-inline: 38px;
+    width: 341px;
+    height: 195px;
+    padding-inline: 38px;
   }
 
   .button-close {
-      width: 257px;
+    width: 257px;
   }
 }
 
