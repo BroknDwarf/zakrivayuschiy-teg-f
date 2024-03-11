@@ -12,7 +12,8 @@
   --themes-main-color: #000;
   --bg-color: #d3d3d3;
   --gradient-color: #e7e7e7, #1a1a1a;
-  --mix-blend-color: var(--themes-main-color);
+  --mix-blend-color: var(--themes-background);
+  --button-text: #fff;
 }
 
 :root.theme-dark {
@@ -23,6 +24,7 @@
   --bg-color: #000;
   --gradient-color: #007f0c, #004306;
   --mix-blend-color: var(--themes-main-color);
+  --button-text: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,5 +36,6 @@
     --bg-color: #000;
     --gradient-color: #007f0c, #004306;
     --mix-blend-color: var(--themes-main-color);
+    --button-text: #00cc14;
   }
 }

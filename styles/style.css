@@ -34,8 +34,8 @@
   font-family: var(--main-font);
   color: var(--themes-main-color);
   font-variation-settings: "wght" var(--font-main-weight);
-  background-attachment: fixed;
-  /* margin: 0 auto; */
+  /* background-attachment: fixed; */
+  /* margin: 0 auto;  */
 }
 
 .button {
@@ -74,8 +74,8 @@
 .header {
   margin-inline: auto;
   margin-block-end: 100px;
-  padding-block-start: clamp(120px, 9vw, 150px);
-  padding-block-end: 21px;
+  padding-block-start: clamp(120px, 9.45vw, 150px);
+  padding-block-end:21px;
   width: var(--content-width);
   background-color: var(--themes-background);
   border: var(--border);
@@ -92,7 +92,7 @@
   gap: 20px;
   align-items: center;
   justify-items: center;
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 
 .header-main-text {
@@ -160,10 +160,10 @@
 }
 
 .main {
+  margin: auto;
+  width: var(--content-width);
   display: grid;
   gap: 50px;
-  width: var(--content-width);
-  margin:  auto;
 }
 
 .main-cards {
@@ -184,7 +184,7 @@
   border-block: var(--border);
 }
 
-.card__image {
+.images-card {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -195,8 +195,8 @@
   justify-self: end;
   top: auto;
   right: auto;
-  margin-block-start: 23px;
-  margin-inline-end: 11px; 
+  margin-block-start: 1.736%;
+  margin-inline-end: 1.736%; 
   color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: 0.875rem;
@@ -263,11 +263,12 @@
 }
 
 .button__text {
-  color: var(--mix-blend-color);
-  /* mix-blend-mode: difference;  */
+  color: var(--button-text);
+  mix-blend-mode: difference;   
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
+  z-index: 1;
 }
 
 .save-button {
@@ -281,8 +282,8 @@
 
 .floppy-image {
   width: 21px;
-  color: var(--mix-blend-color);
-  /* mix-blend-mode: difference; */
+  color: var(--button-text);
+  mix-blend-mode: difference; 
 }
 
 .dialog[open] {
@@ -349,7 +350,6 @@ dialog::backdrop {
 
   .dialog[open] {
     width: 341px;
-    height: 195px;
     padding-inline: 38px;
   }
 

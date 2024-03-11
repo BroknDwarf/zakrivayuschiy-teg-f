@@ -12,4 +12,5 @@
   --mix-blend-color: var(--background-color);
   --heart-fill-color: #FF0000;
   --border: 2px solid var(--themes-main-color);
+  --button-text: #fff;
 }
