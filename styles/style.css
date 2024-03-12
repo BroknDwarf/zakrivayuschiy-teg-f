@@ -34,8 +34,8 @@
   font-family: var(--main-font);
   color: var(--themes-main-color);
   font-variation-settings: "wght" var(--font-main-weight);
-  /* background-attachment: fixed; */
-  /* margin: 0 auto;  */
+  background-attachment: fixed; 
+  margin: 0 auto; 
 }
 
 .button {
@@ -195,8 +195,6 @@
   justify-self: end;
   top: auto;
   right: auto;
-  margin-block-start: 1.736%;
-  margin-inline-end: 1.736%; 
   color: var(--themes-main-color);
   font-family: var(--accent-font);
   font-size: 0.875rem;
@@ -206,6 +204,8 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   z-index: 1;
+  margin-block-start: max(23px, 1.736%);
+  margin-inline-end: max(11px, 1.736%);
 }
 
 @supports (
