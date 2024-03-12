@@ -34,8 +34,8 @@
   font-family: var(--main-font);
   color: var(--themes-main-color);
   font-variation-settings: "wght" var(--font-main-weight);
-  background-attachment: fixed; 
-  margin: 0 auto; 
+  background-attachment: fixed;
+  margin: 0 auto;
 }
 
 .button {
@@ -75,7 +75,7 @@
   margin-inline: auto;
   margin-block-end: 100px;
   padding-block-start: clamp(120px, 9.45vw, 150px);
-  padding-block-end:21px;
+  padding-block-end: 21px;
   width: var(--content-width);
   background-color: var(--themes-background);
   border: var(--border);
@@ -204,8 +204,10 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   z-index: 1;
-  margin-block-start: max(23px, 1.736%);
-  margin-inline-end: max(11px, 1.736%);
+  /* margin-block-start: max(23px, 1.736%);
+  margin-inline-end: max(11px, 1.736%); */
+  margin-top: max(23px, 1.736%);
+  margin-right: max(11px, 1.736%);
 }
 
 @supports (
@@ -264,7 +266,7 @@
 
 .button__text {
   color: var(--button-text);
-  mix-blend-mode: difference;   
+  mix-blend-mode: difference;
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
@@ -283,7 +285,7 @@
 .floppy-image {
   width: 21px;
   color: var(--button-text);
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
 }
 
 .dialog[open] {
@@ -337,8 +339,7 @@ dialog::backdrop {
   }
 }
 
-@media (width <= 375px) { 
-
+@media (width <= 375px) {
   .save-button {
     grid-template-columns: auto;
     justify-items: center;
